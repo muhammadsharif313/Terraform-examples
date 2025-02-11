@@ -65,7 +65,7 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
   location              = "SouthIndia"
   resource_group_name   = azurerm_resource_group.myterraformgroup.name
   network_interface_ids = [azurerm_network_interface.myterraformnic.id]
-  size                  = "Standard_A2_v2"
+  size                  = "Standard_B1s"
 
   os_disk {
     name                 = "myOsDisk"
